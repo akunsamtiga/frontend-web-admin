@@ -1,3 +1,4 @@
+// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Transactions from './pages/Transactions';
@@ -9,9 +10,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/transactions" element={<Transactions />} />
-        <Route path="/invoice/:invoiceId" element={<InvoiceDetail />} />
+        <Route path="/admin" element={<Dashboard />} />
+        <Route path="/admin/transactions" element={<Transactions />} />
+        <Route path="/admin/invoice/:invoiceId" element={<InvoiceDetail />} />
       </Routes>
     </Router>
   );

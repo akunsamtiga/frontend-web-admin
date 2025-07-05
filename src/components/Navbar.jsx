@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        const res = await fetch('http://localhost:3000/');
+        const res = await fetch('https://management.mgc.bot/');
         setIsOnline(res.ok);
       } catch {
         setIsOnline(false);
